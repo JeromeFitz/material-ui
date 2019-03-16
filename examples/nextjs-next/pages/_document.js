@@ -76,7 +76,7 @@ MyDocument.getInitialProps = ctx => {
   let css;
   // It might be undefined, e.g. after an error.
   if (pageContext) {
-    css = pageContext.sheetsRegistry.toString();
+    css = pageContext.sheetsRegistry.registry.toString();
   }
 
   return {
